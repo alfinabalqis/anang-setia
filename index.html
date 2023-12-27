@@ -15,6 +15,7 @@
     />
     <link href="css/aos.css?ver=1.1.0" rel="stylesheet" />
     <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css">
     <link href="css/main.css?ver=1.1.0" rel="stylesheet" />
     <noscript>
       <style type="text/css">
@@ -93,15 +94,17 @@
               <div class="container">
                 <div class="content-center">
                   <div class="cc-profile-image">
-                    <a href="#"><img src="images/profile.jpg" alt="Image" /></a>
+                    <a href="#"><img src="images/profile.png" alt="Image" /></a>
                   </div>
-                  <div class="h2 title">Anang Setia Sumarsono, M.Si</div>
+                  <p class="category text-white text-uppercase mb-0">Dukung Pilihan Kita</p>
+                  <div class="h2 title mt-0">Anang Setia Sumarsono, M.Si</div>
                   <p class="category text-white text-uppercase">
                     Caleg DPR RI PDI Perjuangan <br />
                     Dapil Jabar I (Kota Bandung & Cimahi)
                   </p>
+                  <p class="category text-white text-uppercase">"Pilih Yang SETIA"</p>
                   <a
-                    class="btn btn-primary smooth-scroll w-50"
+                    class="btn btn-primary smooth-scroll"
                     href="#about"
                     data-aos="zoom-in"
                     data-aos-anchor="data-aos-anchor"
@@ -147,67 +150,32 @@
         </div>
         <div class="section" id="about">
           <div class="container">
-            <div class="card" data-aos="fade-up" data-aos-offset="10">
-              <div class="row">
+            <div class="card" id="card-about" data-aos="fade-up" data-aos-offset="10">
+              <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                   <div class="card-body">
-                    <div class="h4 mt-0 title">Tentang</div>
-                    <p class="text-justify">
-                      Halo, Saya Anang Setia Sumarsono. Caleg DPR RI PDI
-                      Perjuangan Dapil Jabar I (Kota Bandung & Cimahi).
-                    </p>
-                    <p class="text-justify">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Vero eius ipsum iusto dicta, rerum est quis delectus
-                      voluptate laudantium perferendis nemo numquam molestiae,
-                      quasi tempora reprehenderit maiores totam nam. Dolorem.
-                    </p>
+                    <p class="text-white">Kenali Calon Pilihan Kita</p>
+                    <div class="h4 mt-0 title text-white">Anang Setia Sumarsono, M.Si</div>
+                    <p class="text-white">Caleg DPR RI PDI Perjuangan <br />
+                      Dapil Jabar I (Kota Bandung & Cimahi)</p>
+                    <div class="h4 mt-0 title text-white">Gerak Cepat Indonesia Unggul</div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="card-body">
-                    <div class="h4 mt-0 title">Informasi</div>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <strong class="text-uppercase">Age:</strong>
-                      </div>
-                      <div class="col-sm-8">24</div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-sm-4">
-                        <strong class="text-uppercase">Email:</strong>
-                      </div>
-                      <div class="col-sm-8">anthony@company.com</div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-sm-4">
-                        <strong class="text-uppercase">Phone:</strong>
-                      </div>
-                      <div class="col-sm-8">+1718-111-0011</div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-sm-4">
-                        <strong class="text-uppercase">Address:</strong>
-                      </div>
-                      <div class="col-sm-8">
-                        140, City Center, New York, U.S.A
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-sm-4">
-                        <strong class="text-uppercase">Language:</strong>
-                      </div>
-                      <div class="col-sm-8">English, German, French</div>
-                    </div>
-                  </div>
+                <div class="col-lg-6 col-md-12 text-center">
+                  <img src="./images/profile-full.jpg" alt="Profile Anang" class="p-4" style="height: 400px; margin: 1rem 0;">
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="section text-center" style="display: flex;
+        align-items: center;
+        align-content: space-around;">
+          <div id="flipdown" class="flipdown"></div>
+        </div>
         <div class="section" id="profile">
           <div class="container">
-            <div class="h4 text-center mb-4 title">Profile</div>
+            <div class="h4 text-center mb-4 title">Tentang</div>
             <center>
               <iframe width="860" height="450" src="https://www.youtube.com/embed/vLB_KGfc5No?si=UY45IfRYe_sIXXjj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 20px;"></iframe>
             </center>
@@ -862,22 +830,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="section" id="contact">
-          <div
-            class="cc-contact-information"
-            style="background-image: url('images/staticmap.png');"
-          >
-            <div class="container">
-              <div class="cc-contact">
-                <div class="row">
-                  <div class="col-md-9">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
     <footer class="footer">
@@ -904,6 +856,7 @@
     <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
     <script src="js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="js/aos.js?ver=1.1.0"></script>
+    <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
   </body>
 </html>
