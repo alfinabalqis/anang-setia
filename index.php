@@ -1,3 +1,23 @@
+<?php
+$koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
+
+ if (isset($_POST['simpan'])) {
+  $nama = mysqli_real_escape_string($koneksi, $_POST['nama']);
+  $pesan = mysqli_real_escape_string($koneksi, $_POST['pesan']);
+  $simpan = mysqli_query($koneksi, "INSERT INTO dukungan (nama, pesan) VALUES('$nama', '$pesan')");
+
+    // if($simpan) {
+    //   echo "<script>window.alert('Dukungan Berhasil disimpan')
+    //   window.localtion='index.php'</script>";
+    // }else{
+    //   echo "<script>window.alert('Dukungan Gagal disimpan')
+    // window.localtion='index.php'</script>";
+    // }
+   
+  }
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -23,6 +43,7 @@
 </head>
 
 <body id="top">
+
   <header>
     <div class="profile-page sidebar-collapse">
       <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
@@ -132,7 +153,7 @@
       <!-- Youtube -->
       <div class="section" id="profile">
         <div class="container">
-          <div class="h4 text-center mb-4 title text-uppercase">Tentang</div>
+          <div class="h4 text-center mb-4 title text-uppercase">Indonesia Unggul</div>
           <center>
             <iframe src="https://www.youtube.com/embed/vLB_KGfc5No?si=UY45IfRYe_sIXXjj" title="YouTube video player"
               frameborder="0"
@@ -333,59 +354,59 @@
         </div>
       </div>
       <!-- Penugasan Partai -->
-      <div class="section">
+      <div class="carousel-inner">
         <div class="h4 text-center mb-4 title text-uppercase">Penugasan Partai</div>
-        <div class="row justify-content-center row-partai">
-          <div class="card partai">
+        <div class="row justify-content-center row-partai ">
+          <div class="card partai carousel-item active">
             <img class="card-img-top" src="./images/partai/1.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Caleg DPR RI PDI Perjuangan No Urut 2 Dapil Jabar I
                 (Kota Bandung & Kota Cimahi)</p>
             </div>
           </div>
-          <div class="card partai">
+          <div class="card partai carousel-item ">
             <img class="card-img-top" src="./images/partai/2.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Kepala Biro Analisis & Evaluasi Badan Kebudayaan
                 Nasional Pusat (BKNP) PDI Perjuangan</p>
             </div>
           </div>
-          <div class="card partai">
+          <div class="card partai carousel-item">
             <img class="card-img-top" src="./images/partai/3.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator bidang Pengamanan Kegiatan Peringatan
                 Bulan Bung Karno di GBK 2023</p>
             </div>
           </div>
-          <div class="card partai">
+          <div class="card partai carousel-item">
             <img class="card-img-top" src="./images/partai/4.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator Acara 50 tahun PDI Perjuangan di
                 Kemayoran 2023</p>
             </div>
           </div>
-          <div class="card partai">
+          <div class="card partai carousel-item">
             <img class="card-img-top" src="./images/partai/5.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator Peduli Korban Gempa Cianjur BKNP PDI
                 Perjuangan 2022</p>
             </div>
           </div>
-          <div class="card partai">
+          <div class="card partai carousel-item">
             <img class="card-img-top" src="./images/partai/6.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Direktur Festival Desa II BKNP PDI Perjuangan 2022
               </p>
             </div>
           </div>
-          <div class="card partai">
+          <div class="card partai carousel-item">
             <img class="card-img-top" src="./images/partai/7.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Direktur Festival Desa I BKNP PDI Perjuangan 2021
               </p>
             </div>
           </div>
-          <div class="card partai">
+          <div class="card partai carousel-item">
             <img class="card-img-top" src="./images/partai/8.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator Peresmian Rumah Budaya PDI Perjuangan
@@ -395,30 +416,54 @@
         </div>
       </div>
       <!-- Dukungan -->
-      <div class="section" id="reference">
+      <div class="#" id="reference">
         <div class="container cc-reference">
           <div class="h4 mb-4 text-center title">Dukungan</div>
-          <p class="text-center">Berikan Dukungan anda Kepada Anang Setia Sumarsono sebagai Calon DPR RI Tahun 2024 <br>
-            Dapil Jawa Barat I Kota Bandung dan Kota Cimahi melalui kolom komentar dibawah</p>
-          <div>
-            <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" style="margin: 0 auto;">
-              <div class="my-2 p-3 pt-2">
-                <form action="#" method="POST">
-                  <div class="form-group my-2">
-                    <label for="name" class="form-label fw-bolder">Name</label>
-                    <input class="form-control" type="text" id="name" name="name" required>
+          <p class="text-center">Berikan Dukungan anda Kepada Anang Setia Sumarsono sebagai Calon DPR RI Tahun 2024 <br> Dapil Jawa Barat I Kota Bandung dan Kota Cimahi melalui kolom komentar dibawah</p>
+          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" style="margin: 0 auto;">
+            <div class="my-2 p-3 pt-2">
+              <form action="#" method="POST">
+                <div class="form-group my-2">
+                  <label for="name" class="form-label fw-bolder">Nama</label>
+                  <input class="form-control" type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group my-2">
+                  <label for="message" class="form-label fw-bolder">Dukungan</label>
+                  <textarea class="form-control" style="resize: none;" id="pesan" name="pesan" rows="4"
+                    required></textarea>
+                </div>
+                <button class="btn btn-primary mt-2" type="submit" name="simpan">KIRIMKAN DUKUNGAN</button>
+              </form>
+            </div>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <div
+              class="carousel slide"
+              id="cc-Indicators"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-3 cc-reference-header">
+                      <img src="images/reference-image-1.jpg" alt="Image" />
+                      <?php
+
+                      $data_dukungan = mysqli_query($koneksi, "SELECT * FROM dukungan ORDER BY id ASC");
+                      while ($tampil_dukungan = mysqli_fetch_array($data_dukungan)){
+                      
+                      ?>
+
+                      <div class="h5 pt-2"><?= $tampil_dukungan['nama'] ?></div>
+                    </div>
+                    <div class="col-lg-10 col-md-9">
+                      <p>
+                      <?= $tampil_dukungan['pesan'] ?>                      </p>
+                    </div>
+                    <?php } ?>
+
                   </div>
-                  <div class="form-group my-2">
-                    <label for="email" class="form-label fw-bolder">Email</label>
-                    <input class="form-control" type="email" id="email" name="_replyto" required>
-                  </div>
-                  <div class="form-group my-2">
-                    <label for="message" class="form-label fw-bolder">Message</label>
-                    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4"
-                      required></textarea>
-                  </div>
-                  <button class="btn btn-primary mt-2" type="submit">Send</button>
-                </form>
+                </div>
               </div>
             </div>
           </div>
