@@ -1,14 +1,32 @@
-// Add your javascript here
-// Don't forget to add it into respective layouts where this js file is needed
-
 $(document).ready(function () {
-  AOS.init({
-    // uncomment below for on-scroll animations to played only once
-    // once: true
-  }); // initialize animate on scroll library
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 3,
+        nav: false,
+      },
+      1000: {
+        items: 5,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
 });
 
-// Smooth scroll for links with hashes
+
+$(document).ready(function () {
+  AOS.init({ }); // initialize animate on scroll library
+});
+
+
 $("a.smooth-scroll").click(function (event) {
   // On-page links
   if (

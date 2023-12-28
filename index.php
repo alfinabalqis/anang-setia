@@ -26,8 +26,12 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Anang Setia Sumarsono</title>
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
+
+  
+
   <link href="css/aos.css?ver=1.1.0" rel="stylesheet" />
   <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css">
@@ -43,13 +47,12 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
 </head>
 
 <body id="top">
-
   <header>
     <div class="profile-page sidebar-collapse">
       <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
         <div class="container">
           <div class="navbar-translate">
-            <a class="navbar-brand" href="#" rel="tooltip">PDIP</a>
+            <a class="navbar-brand" href="#" rel="tooltip">Anang Setia</a>
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
               aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
@@ -59,13 +62,13 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           <nav class="collapse navbar-collapse justify-content-end" id="navigation">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link smooth-scroll" href="#portfolio">Pengalaman</a>
+                <a class="nav-link smooth-scroll" href="#pengalaman">Pengalaman</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link smooth-scroll" href="#experience">Penugasan</a>
+                <a class="nav-link smooth-scroll" href="#tugas">Penugasan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link smooth-scroll" href="#contact">Dukungan</a>
+                <a class="nav-link smooth-scroll" href="#dukungan">Dukungan</a>
               </li>
             </ul>
           </nav>
@@ -198,7 +201,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
         </div>
       </div>
       <!-- Pendidikan -->
-      <div class="section">
+      <div class="section" id="pendidikan">
         <div class="container cc-education">
           <div class="h4 text-center mb-4 title text-uppercase">Pendidikan</div>
           <div class="card">
@@ -259,8 +262,9 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </div>
         </div>
       </div>
+      
       <!-- Pengalaman Kerja -->
-      <div class="section">
+      <div class="section" id="pengalaman">
         <div>
           <div class="h4 text-center mb-4 title text-uppercase">Pengalaman Kerja</div>
           <div class="container timeline">
@@ -354,59 +358,59 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
         </div>
       </div>
       <!-- Penugasan Partai -->
-      <div class="carousel-inner">
+      <div class="carousel-inner section" id="tugas">
         <div class="h4 text-center mb-4 title text-uppercase">Penugasan Partai</div>
-        <div class="row justify-content-center row-partai ">
-          <div class="card partai carousel-item active">
+        <div class="owl-carousel owl-theme row justify-content-center row-partai ">
+          <div class="card partai item active">
             <img class="card-img-top" src="./images/partai/1.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Caleg DPR RI PDI Perjuangan No Urut 2 Dapil Jabar I
                 (Kota Bandung & Kota Cimahi)</p>
             </div>
           </div>
-          <div class="card partai carousel-item ">
+          <div class="card partai item ">
             <img class="card-img-top" src="./images/partai/2.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Kepala Biro Analisis & Evaluasi Badan Kebudayaan
                 Nasional Pusat (BKNP) PDI Perjuangan</p>
             </div>
           </div>
-          <div class="card partai carousel-item">
+          <div class="card partai item">
             <img class="card-img-top" src="./images/partai/3.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator bidang Pengamanan Kegiatan Peringatan
                 Bulan Bung Karno di GBK 2023</p>
             </div>
           </div>
-          <div class="card partai carousel-item">
+          <div class="card partai item">
             <img class="card-img-top" src="./images/partai/4.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator Acara 50 tahun PDI Perjuangan di
                 Kemayoran 2023</p>
             </div>
           </div>
-          <div class="card partai carousel-item">
+          <div class="card partai item">
             <img class="card-img-top" src="./images/partai/5.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator Peduli Korban Gempa Cianjur BKNP PDI
                 Perjuangan 2022</p>
             </div>
           </div>
-          <div class="card partai carousel-item">
+          <div class="card partai item">
             <img class="card-img-top" src="./images/partai/6.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Direktur Festival Desa II BKNP PDI Perjuangan 2022
               </p>
             </div>
           </div>
-          <div class="card partai carousel-item">
+          <div class="card partai item">
             <img class="card-img-top" src="./images/partai/7.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Direktur Festival Desa I BKNP PDI Perjuangan 2021
               </p>
             </div>
           </div>
-          <div class="card partai carousel-item">
+          <div class="card partai item">
             <img class="card-img-top" src="./images/partai/8.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator Peresmian Rumah Budaya PDI Perjuangan
@@ -416,7 +420,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
         </div>
       </div>
       <!-- Dukungan -->
-      <div class="#" id="reference">
+      <div class="section" id="dukungan">
         <div class="container cc-reference">
           <div class="h4 mb-4 text-center title">Dukungan</div>
           <p class="text-center">Berikan Dukungan anda Kepada Anang Setia Sumarsono sebagai Calon DPR RI Tahun 2024 <br> Dapil Jawa Barat I Kota Bandung dan Kota Cimahi melalui kolom komentar dibawah</p>
@@ -436,37 +440,27 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
               </form>
             </div>
           </div>
-          <div class="card" data-aos="zoom-in">
-            <div
-              class="carousel slide"
-              id="cc-Indicators"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-lg-2 col-md-3 cc-reference-header">
-                      <img src="images/reference-image-1.jpg" alt="Image" />
-                      <?php
 
-                      $data_dukungan = mysqli_query($koneksi, "SELECT * FROM dukungan ORDER BY id ASC");
-                      while ($tampil_dukungan = mysqli_fetch_array($data_dukungan)){
-                      
-                      ?>
-
-                      <div class="h5 pt-2"><?= $tampil_dukungan['nama'] ?></div>
-                    </div>
-                    <div class="col-lg-10 col-md-9">
-                      <p>
-                      <?= $tampil_dukungan['pesan'] ?>                      </p>
-                    </div>
-                    <?php } ?>
-
-                  </div>
+          <div class="section" id="komentar">
+            <div class="h4 mb-4 text-center title">Komentar</div>
+            <div class="text-center">
+              <img src="/images/profile.png" alt="">
+            </div>
+            <div class="row justify-content-center">
+              <?php
+              $data_dukungan = mysqli_query($koneksi, "SELECT * FROM dukungan ORDER BY id ASC");
+              while ($tampil_dukungan = mysqli_fetch_array($data_dukungan)) {
+              ?>
+                <div class="col-md-3 rounded bg-light p-2 text-center m-2">
+                  <h5 class="mb-0 font-weight-bold"><?php echo $tampil_dukungan['nama']; ?></h5>
+                  <p><?php echo $tampil_dukungan['pesan']; ?></p>
                 </div>
-              </div>
+              <?php
+              }
+              ?>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -488,6 +482,12 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
       </p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
   <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
   <script src="js/core/popper.min.js?ver=1.1.0"></script>
   <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
