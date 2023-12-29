@@ -174,7 +174,8 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
         <div class="container">
           <div class="h4 text-center mb-4 title text-uppercase">Visi & Misi</div>
           <div class="row justify-content-around mt-3">
-            <div class="card card-visi col-lg-5 col-md-12" data-aos="fade-up" data-aos-offset="10" style="height: 100%;">
+            <div class="card card-visi col-lg-5 col-md-12" data-aos="fade-up" data-aos-offset="10"
+              style="height: 100%;">
               <div class="card-body">
                 <div class="h4 mt-0 title text-center">Visi</div>
                 <hr>
@@ -188,16 +189,20 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                 <div class="h4 mt-0 title text-center">Misi</div>
                 <hr>
                 <p class="text-justify">
-                <ol>
-                  <li>Mempercepat pembangunan manusia Indonesia unggul yang berkualitas, produktif, dan berkepribadian.</li>
-                  <li>Mempercepat penguasaan sains dan teknologi melalui percepatan Riset dan Inovasi (R & I) berdikari</li>
-                  <li>Mempercepat pembangunan ekonomi berdikari berbasis pengetahuan dan nilai tambah</li>
-                  <li>Mempercepat pemerataan pembangunan ekonomi</li>
-                  <li>Mempercepat pembangunan sistem digital nasional</li>
-                  <li>Mempercepat perwujudan lingkunganhidup yang berkelanjutan melalui ekonomi hijau dan biru</li>
-                  <li>Mempercepat pelaksanaan demokrasi substantif, penghormatan hak asasi manusia (HAM), supremasi Hukum yang berkeadilan, dan keamanan yang profesional</li>
-                  <li>Mempercepat peningkatan peran Indonesia dalam mewujudkan tata dunia baru yang lebih berkeadilan melalui politik luar negeri bebas aktif dan memperkuat pertahanan negara.</li>
-                </ol>
+                  <ol>
+                    <li>Mempercepat pembangunan manusia Indonesia unggul yang berkualitas, produktif, dan
+                      berkepribadian.</li>
+                    <li>Mempercepat penguasaan sains dan teknologi melalui percepatan Riset dan Inovasi (R & I)
+                      berdikari</li>
+                    <li>Mempercepat pembangunan ekonomi berdikari berbasis pengetahuan dan nilai tambah</li>
+                    <li>Mempercepat pemerataan pembangunan ekonomi</li>
+                    <li>Mempercepat pembangunan sistem digital nasional</li>
+                    <li>Mempercepat perwujudan lingkunganhidup yang berkelanjutan melalui ekonomi hijau dan biru</li>
+                    <li>Mempercepat pelaksanaan demokrasi substantif, penghormatan hak asasi manusia (HAM), supremasi
+                      Hukum yang berkeadilan, dan keamanan yang profesional</li>
+                    <li>Mempercepat peningkatan peran Indonesia dalam mewujudkan tata dunia baru yang lebih berkeadilan
+                      melalui politik luar negeri bebas aktif dan memperkuat pertahanan negara.</li>
+                  </ol>
                 </p>
               </div>
             </div>
@@ -206,8 +211,8 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
       </div>
       <!-- Pendidikan -->
       <div class="section" id="pendidikan">
+        <div class="h4 text-center mb-4 title text-uppercase">Pendidikan</div>
         <div class="container cc-education">
-          <div class="h4 text-center mb-4 title text-uppercase">Pendidikan</div>
           <div class="card">
             <div class="row">
               <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -428,8 +433,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           <div class="row justify-content-center" style="gap: 10rem">
             <div>
               <div class="text-center">
-                <a class="btn btn-default btn-round btn-lg btn-icon"
-                  href="#">
+                <a class="btn btn-default btn-round btn-lg btn-icon" href="#">
                   <i class="fa fa-solid fa-user-group"></i>
                 </a>
               </div>
@@ -440,8 +444,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
             </div>
             <div>
               <div class="text-center">
-                <a class="btn btn-default btn-round btn-lg btn-icon"
-                  href="#">
+                <a class="btn btn-default btn-round btn-lg btn-icon" href="#">
                   <i class="fa fa-regular fa-face-smile"></i>
                 </a>
               </div>
@@ -450,13 +453,13 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                 <p>Relawan</p>
               </div>
             </div>
-
           </div>
         </div>
         <hr>
         <div class="container cc-reference">
           <div class="h4 mb-4 text-center title">Dukungan</div>
-          <p class="text-center">Berikan Dukungan anda Kepada Anang Setia Sumarsono sebagai Calon DPR RI Tahun 2024 <br> Dapil Jawa Barat I Kota Bandung dan Kota Cimahi melalui kolom komentar dibawah</p>
+          <p class="text-center">Berikan Dukungan anda Kepada Anang Setia Sumarsono sebagai Calon DPR RI Tahun 2024 <br>
+            Dapil Jawa Barat I Kota Bandung dan Kota Cimahi melalui kolom komentar dibawah</p>
           <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" style="margin: 0 auto;">
             <div class="my-2 p-3 pt-2">
               <form action="#" method="POST">
@@ -480,20 +483,23 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
               <img src="/images/profile.png" alt="">
             </div>
             <div class="row justify-content-center">
-              <?php
-              $data_dukungan = mysqli_query($koneksi, "SELECT * FROM dukungan ORDER BY id ASC");
-              while ($tampil_dukungan = mysqli_fetch_array($data_dukungan)) {
-              ?>
+              <div class="scrollable-container" style="max-height: 100px; overflow-y: auto;">
+                <?php
+            $data_dukungan = mysqli_query($koneksi, "SELECT * FROM dukungan ORDER BY id ASC");
+            while ($tampil_dukungan = mysqli_fetch_array($data_dukungan)) {
+            ?>
                 <div class="col-md-3 rounded bg-light p-2 text-center m-2">
                   <h5 class="mb-0 font-weight-bold"><?php echo $tampil_dukungan['nama']; ?></h5>
                   <p><?php echo $tampil_dukungan['pesan']; ?></p>
                 </div>
-              <?php
-              }
-              ?>
+                <?php
+            }
+            ?>
+              </div>
             </div>
           </div>
-          
+
+
         </div>
       </div>
     </div>
@@ -515,25 +521,44 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
       </p>
     </div>
   </footer>
+  <style>
+    /* Tambahkan style untuk scroll ke pinggir */
+    @media (max-width: 767px) {
+      .cc-education {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+
+      .card {
+        display: inline-block;
+        vertical-align: top;
+        width: 300px;
+        /* Atur lebar kartu sesuai kebutuhan Anda */
+        margin-right: 10px;
+        /* Atur jarak antar kartu sesuai kebutuhan Anda */
+      }
+    }
+  </style>
   <script>
     const counters = document.querySelectorAll('.value');
     const speed = 300;
 
-    counters.forEach( counter => {
+    counters.forEach(counter => {
       const animate = () => {
-          const value = +counter.getAttribute('akhi');
-          const data = +counter.innerText;
-        
-          const time = value / speed;
-        if(data < value) {
-              counter.innerText = Math.ceil(data + time);
-              setTimeout(animate, 1);
-            }else{
-              counter.innerText = value;
-            }
-        
+        const value = +counter.getAttribute('akhi');
+        const data = +counter.innerText;
+
+        const time = value / speed;
+        if (data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 1);
+        } else {
+          counter.innerText = value;
+        }
+
       }
-      
+
       animate();
     });
   </script>
