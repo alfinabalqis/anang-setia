@@ -3,6 +3,7 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -7574,7 +7575,7 @@ a.credit {
   padding-bottom: 0;
 }
 
-.card-visi{
+.card-visi {
   border: 1px solid #d21d25;
   border-radius: 20px;
   box-shadow: none;
@@ -7625,6 +7626,7 @@ iframe {
   width: 860px;
   height: 450px;
 }
+
 .container.timeline {
   min-height: 50vh;
   width: 100%;
@@ -7634,6 +7636,7 @@ iframe {
   padding: 100px 0;
   background-color: #fff;
 }
+
 .timeline {
   width: 80%;
   height: auto;
@@ -7645,6 +7648,7 @@ iframe {
 .timeline ul {
   list-style: none;
 }
+
 .timeline ul li {
   padding: 20px;
   background-color: #1e1f22;
@@ -7652,20 +7656,24 @@ iframe {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
 .timeline ul li:last-child {
   margin-bottom: 0;
 }
+
 .timeline-content h1 {
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 10px;
 }
+
 .timeline-content p {
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
 }
+
 .timeline-content .date {
   font-size: 12px;
   font-weight: 500;
@@ -7673,6 +7681,7 @@ iframe {
   letter-spacing: 2px;
   color: #000;
 }
+
 @media only screen and (min-width: 768px) {
   .timeline:before {
     content: "";
@@ -7684,23 +7693,27 @@ iframe {
     height: 100%;
     background-color: gray;
   }
+
   .timeline ul li {
     width: 50%;
     position: relative;
     margin-bottom: 50px;
   }
+
   .timeline ul li:nth-child(odd) {
     float: left;
     clear: right;
     transform: translateX(-30px);
     border-radius: 20px 0px 20px 20px;
   }
+
   .timeline ul li:nth-child(even) {
     float: right;
     clear: left;
     transform: translateX(0px);
     border-radius: 0px 20px 20px 20px;
   }
+
   .timeline ul li::before {
     content: "";
     position: absolute;
@@ -7710,18 +7723,22 @@ iframe {
     background-color: gray;
     top: 0px;
   }
+
   .timeline ul li:nth-child(odd)::before {
     transform: translate(50%, -50%);
     right: -10px;
   }
+
   .timeline ul li:nth-child(even)::before {
     transform: translate(-50%, -50%);
     left: -20px;
   }
+
   .timeline-content .date {
     position: absolute;
     top: -30px;
   }
+
   .timeline ul li:hover::before {
     background-color: #FF3636;
   }
@@ -7741,14 +7758,15 @@ iframe {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -7769,8 +7787,9 @@ iframe {
   font-size: 15px;
   text-transform: uppercase;
 }
+
 h1.flip {
-	margin: 10px auto;
+  margin: 10px auto;
   font-weight: bold;
   color: #fff;
 }
@@ -7795,36 +7814,93 @@ h1.flip {
   margin: 5px 0;
 }
 
+.card-komen {
+  background: #d21d25;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  /*Start Slider*/
+  .cc-education{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .card {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin-right: 10px;
+  }
+
+  .card-body.edu{
+    overflow-y: auto;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .timeline-mobile {
+    display: -webkit-inline-box;
+    overflow-x: scroll;
+    width: 300px;
+  }
+  
+  .timeline-mobile li {
+    margin: 0px 5px 20px;
+    text-align: center;
+  }
+
+  /*End Slider*/
+
+  .cc-education .cc-education-header {
+    padding: 30px 0px;
+  }
+  .card-body.cc-education-header p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  iframe {
+    width: 100%;
+  }
+  .container.timeline {
+    padding: 0px;
+  }
+
+  .timeline ul {
+    padding-left: 0px;
+  }
+
+  .timeline-content .date {
+    color: #fff;
+  }
+  #flipdown {
+    margin: auto !important;
+  }
+  #about {
+    text-align: center;
+  }
+}
+
 @media(max-width: 550px) {
   .example {
     width: 100%;
     height: 362px;
   }
-  #flipdown {
-    margin: auto !important;
-  }
-  iframe {
-    width: 100%;
-  }
+
   .card-visi {
     margin: 10px 1rem;
   }
-  .flip-card{
+
+  .flip-card {
     width: 60px;
     margin: 0px 5px;
   }
-  .container.timeline {
-    padding: 0px;
-  }
-  .timeline ul {
-    padding-left: 0px;
-  }
-  .timeline-content .date {
-    color: #fff;
-  }
+
   .card-body.tentang {
     text-align: center;
   }
+
   .flip-card-back {
     font-size: 10px;
   }

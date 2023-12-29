@@ -118,10 +118,10 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                   </a>
                   <a class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Play and Pause Music"
                     onclick="toggleAudio()">
-                    <audio controls autoplay id="myAudio" style="display: none;">
+                    <!-- <audio controls autoplay id="myAudio" style="display: none;">
                       <source src="./audio/mars-pdip.mp3" type="audio/mp3">
                       Your browser does not support the audio element.
-                    </audio>
+                    </audio> -->
                     <i class="fa fa-play "></i>
                   </a>
                 </div>
@@ -222,7 +222,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
+                <div class="card-body edu">
                   <div class="h5">Magister Ilmu Komunikasi</div>
                   <p class="category">Universitas Indonesia</p>
                   <p>Selama periode 2007 hingga 2009, beliau mengejar gelar Magister Ilmu Komunikasi di Universitas
@@ -240,7 +240,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
+                <div class="card-body edu">
                   <div class="h5">Sarjana Sastra Inggris</div>
                   <p class="category">Universitas Negeri Jakarta</p>
                   <p>
@@ -259,7 +259,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
+                <div class="card-body edu">
                   <div class="h5">Sekolah Menengah Atas</div>
                   <p class="category">Sekolah Taruna Nusantara</p>
                   <p>Pada periode 1999 hingga 2002, beliau menyelesaikan pendidikan Sekolah Menengah Atas di Sekolah
@@ -277,12 +277,12 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           <div class="h4 text-center mb-4 title text-uppercase">Pengalaman Kerja</div>
           <div class="container timeline">
             <div class="timeline">
-              <ul>
+              <ul class="timeline-mobile">
                 <li>
                   <div class="timeline-content">
                     <h3 class="date">Tahun 2019 - Sekarang</h3>
                     <h1>Tenaga Ahli AKD Komisi VI</h1>
-                    <p class="font-weight-bold">di DPR RI</p>
+                    <p class="font-weight-bold">DPR RI</p>
                     <p>Mendukung Kinerja Pimpinan Komisi VI DPR RI </p>
                   </div>
                 </li>
@@ -290,7 +290,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                   <div class="timeline-content">
                     <h3 class="date">Tahun 2019 - Sekarang</h3>
                     <h1>Direktur</h1>
-                    <p class="font-weight-bold">di PT. VISI INTERNASIONAL PERSADA</p>
+                    <p class="font-weight-bold">PT. VISI INTERNASIONAL PERSADA</p>
                     <p>Pimpinan perusahaan bidang pengadaan barang dan jasa di Kementerian Pertahanan, TNI, POLRI, BUMN
                       dan BUMD.</p>
                   </div>
@@ -299,7 +299,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                   <div class="timeline-content">
                     <h3 class="date">Tahun 2021 - September 2023</h3>
                     <h1>Direktur Utama</h1>
-                    <p class="font-weight-bold">di PT. ARMORY REBORN INDONESIA </p>
+                    <p class="font-weight-bold">PT. ARMORY REBORN INDONESIA </p>
                     <p>Pimpinan Perusahaan bidang media pertahanan, keamanan dan geopolitik nasional dan internasional.
                     </p>
                   </div>
@@ -368,8 +368,8 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
       <!-- Penugasan Partai -->
       <div class="carousel-inner section" id="tugas">
         <div class="h4 text-center mb-4 title text-uppercase">Penugasan Partai</div>
-        <div class="owl-carousel owl-theme row justify-content-center row-partai ">
-          <div class="card partai item active">
+        <div class="row justify-content-center row-partai">
+          <div class="card partai item">
             <img class="card-img-top" src="./images/partai/1.png" alt="Card image cap">
             <div class="card-body">
               <p class="card-text font-weight-bold text-center pt-2">Caleg DPR RI PDI Perjuangan No Urut 2 Dapil Jabar I
@@ -476,19 +476,20 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
               </form>
             </div>
           </div>
+          <hr>
 
           <div class="section" id="komentar">
-            <div class="h4 mb-4 text-center title">Komentar</div>
+            <div class="h4 mb-4 text-center title">Dukungan</div>
             <div class="text-center">
               <img src="/images/profile.png" alt="">
             </div>
             <div class="row justify-content-center">
-              <div class="scrollable-container" style="max-height: 100px; overflow-y: auto;">
+              <div class="scrollable-container mt-3" style="max-height: 300px; overflow-y: auto;">
                 <?php
             $data_dukungan = mysqli_query($koneksi, "SELECT * FROM dukungan ORDER BY id ASC");
             while ($tampil_dukungan = mysqli_fetch_array($data_dukungan)) {
             ?>
-                <div class="col-md-3 rounded bg-light p-2 text-center m-2">
+                <div class="rounded p-2 text-center m-2 card-komen">
                   <h5 class="mb-0 font-weight-bold"><?php echo $tampil_dukungan['nama']; ?></h5>
                   <p><?php echo $tampil_dukungan['pesan']; ?></p>
                 </div>
@@ -498,8 +499,6 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -521,25 +520,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
       </p>
     </div>
   </footer>
-  <style>
-    /* Tambahkan style untuk scroll ke pinggir */
-    @media (max-width: 767px) {
-      .cc-education {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-      }
 
-      .card {
-        display: inline-block;
-        vertical-align: top;
-        width: 300px;
-        /* Atur lebar kartu sesuai kebutuhan Anda */
-        margin-right: 10px;
-        /* Atur jarak antar kartu sesuai kebutuhan Anda */
-      }
-    }
-  </style>
   <script>
     const counters = document.querySelectorAll('.value');
     const speed = 300;
