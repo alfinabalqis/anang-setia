@@ -31,8 +31,6 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="shortcut icon" href="images/profile.png" type="image/x-icon">
 
-  
-
   <link href="css/aos.css?ver=1.1.0" rel="stylesheet" />
   <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css">
@@ -112,6 +110,11 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                     href="https://www.instagram.com/anang_setia_sumarsono/" rel="tooltip" target="_blank"
                     title="Follow me on Instagram">
                     <i class="fa fa-instagram"></i>
+                  </a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon"
+                    href="https://www.tiktok.com/@pdip.anang.setia?_t=8iaSOztnnCK&_r=1" rel="tooltip" target="_blank"
+                    title="Follow me on Tiktok">
+                    <i class="fa fa-brands fa-tiktok"></i>
                   </a>
                   <a class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Play and Pause Music"
                     onclick="toggleAudio()">
@@ -484,8 +487,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
-
+  <script src="https://kit.fontawesome.com/9b616d1e46.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
