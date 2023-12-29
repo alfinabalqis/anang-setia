@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({
+  $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
@@ -21,11 +21,9 @@ $(document).ready(function () {
   });
 });
 
-
 $(document).ready(function () {
-  AOS.init({ }); // initialize animate on scroll library
+  AOS.init({}); // initialize animate on scroll library
 });
-
 
 $("a.smooth-scroll").click(function (event) {
   // On-page links
@@ -89,13 +87,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Audio
 function toggleAudio() {
-  var audio = document.getElementById('myAudio');
-  var button = document.querySelector('.play-pause-button');
+  var audio = document.getElementById("myAudio");
+  var button = document.querySelector(".play-pause-button");
   if (audio.paused) {
-      audio.play();
-      button.classList.add('playing');
+    audio.play();
+    button.classList.add("playing");
   } else {
-      audio.pause();
-      button.classList.remove('playing');
+    audio.pause();
+    button.classList.remove("playing");
   }
 }

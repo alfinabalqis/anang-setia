@@ -266,7 +266,6 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </div>
         </div>
       </div>
-      
       <!-- Pengalaman Kerja -->
       <div class="section" id="pengalaman">
         <div>
@@ -425,6 +424,36 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
       </div>
       <!-- Dukungan -->
       <div class="section" id="dukungan">
+        <div>
+          <div class="row justify-content-center" style="gap: 10rem">
+            <div>
+              <div class="text-center">
+                <a class="btn btn-default btn-round btn-lg btn-icon"
+                  href="#">
+                  <i class="fa fa-solid fa-user-group"></i>
+                </a>
+              </div>
+              <div class="text-center">
+                <div class="h4 dukungan m-0 text-center title value" akhi="55372">0</div>
+                <p>Dukungan</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-center">
+                <a class="btn btn-default btn-round btn-lg btn-icon"
+                  href="#">
+                  <i class="fa fa-regular fa-face-smile"></i>
+                </a>
+              </div>
+              <div class="text-center">
+                <div class="h4 dukungan m-0 text-center title value" akhi="7593">0</div>
+                <p>Relawan</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <hr>
         <div class="container cc-reference">
           <div class="h4 mb-4 text-center title">Dukungan</div>
           <p class="text-center">Berikan Dukungan anda Kepada Anang Setia Sumarsono sebagai Calon DPR RI Tahun 2024 <br> Dapil Jawa Barat I Kota Bandung dan Kota Cimahi melalui kolom komentar dibawah</p>
@@ -486,6 +515,28 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
       </p>
     </div>
   </footer>
+  <script>
+    const counters = document.querySelectorAll('.value');
+    const speed = 300;
+
+    counters.forEach( counter => {
+      const animate = () => {
+          const value = +counter.getAttribute('akhi');
+          const data = +counter.innerText;
+        
+          const time = value / speed;
+        if(data < value) {
+              counter.innerText = Math.ceil(data + time);
+              setTimeout(animate, 1);
+            }else{
+              counter.innerText = value;
+            }
+        
+      }
+      
+      animate();
+    });
+  </script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://kit.fontawesome.com/9b616d1e46.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
