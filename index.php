@@ -29,6 +29,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="images/profile.png" type="image/x-icon">
 
   
 
