@@ -1,22 +1,33 @@
 <?php
 $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
 
- if (isset($_POST['simpan'])) {
-  $nama = mysqli_real_escape_string($koneksi, $_POST['nama']);
-  $pesan = mysqli_real_escape_string($koneksi, $_POST['pesan']);
-  $simpan = mysqli_query($koneksi, "INSERT INTO dukungan (nama, pesan) VALUES('$nama', '$pesan')");
+// Check connection
+if (mysqli_connect_errno()) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+// Query untuk mengambil data dukungan
+$queryDukungan = "SELECT * FROM dukungan";
+$resultDukungan = mysqli_query($koneksi, $queryDukungan);
 
-    // if($simpan) {
-    //   echo "<script>window.alert('Dukungan Berhasil disimpan')
-    //   window.localtion='index.php'</script>";
-    // }else{
-    //   echo "<script>window.alert('Dukungan Gagal disimpan')
-    // window.localtion='index.php'</script>";
-    // }
-   
-  }
+// Menghitung total dukungan
+$totalDukungan = mysqli_num_rows($resultDukungan) + 5000;
 
- ?>
+
+if (isset($_POST['simpan'])) {
+    $nama = mysqli_real_escape_string($koneksi, $_POST['nama']);
+    $pesan = mysqli_real_escape_string($koneksi, $_POST['pesan']);
+    $simpan = mysqli_query($koneksi, "INSERT INTO dukungan (nama, pesan) VALUES('$nama', '$pesan')");
+
+    if ($simpan) {
+        echo "<script>alert('Dukungan Berhasil disimpan'); window.location='index.php';</script>";
+    } else {
+        echo "<script>alert('Dukungan Gagal disimpan'); window.location='index.php';</script>";
+    }
+}
+
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en-US">
@@ -30,6 +41,9 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="shortcut icon" href="images/profile.png" type="image/x-icon">
+
+
+
 
   <link href="css/aos.css?ver=1.1.0" rel="stylesheet" />
   <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet" />
@@ -118,10 +132,10 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                   </a>
                   <a class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Play and Pause Music"
                     onclick="toggleAudio()">
-                    <!-- <audio controls autoplay id="myAudio" style="display: none;">
+                    <audio controls autoplay id="myAudio" style="display: none;">
                       <source src="./audio/mars-pdip.mp3" type="audio/mp3">
                       Your browser does not support the audio element.
-                    </audio> -->
+                    </audio>
                     <i class="fa fa-play "></i>
                   </a>
                 </div>
@@ -130,6 +144,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </div>
         </div>
       </div>
+      <hr>
       <!-- Tentang -->
       <div class="section" id="about">
         <div class="container">
@@ -152,13 +167,17 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </div>
         </div>
       </div>
+      <hr>
+
       <!-- Countdown -->
-      <div class="section text-center d-flex flex-column justify-content-center">
+      <div class=" text-center d-flex flex-column justify-content-center">
         <div class="h4 text-center mb-4 title">Ikut Ramaikan Pesta Demokrasi <br> 14 Februari 2024</div>
         <div id="flipdown" class="flipdown"></div>
       </div>
+      <hr>
+
       <!-- Youtube -->
-      <div class="section" id="profile">
+      <div class="" id="profile">
         <div class="container">
           <div class="h4 text-center mb-4 title text-uppercase">Indonesia Unggul</div>
           <center>
@@ -169,8 +188,10 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </center>
         </div>
       </div>
+      <hr>
+
       <!-- Visi Misi -->
-      <div class="section" id="visi">
+      <div class="" id="visi">
         <div class="container">
           <div class="h4 text-center mb-4 title text-uppercase">Visi & Misi</div>
           <div class="row justify-content-around mt-3">
@@ -209,8 +230,9 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </div>
         </div>
       </div>
+      <hr>
       <!-- Pendidikan -->
-      <div class="section" id="pendidikan">
+      <div class="" id="pendidikan">
         <div class="h4 text-center mb-4 title text-uppercase">Pendidikan</div>
         <div class="container cc-education">
           <div class="card">
@@ -271,8 +293,9 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </div>
         </div>
       </div>
+      <hr>
       <!-- Pengalaman Kerja -->
-      <div class="section" id="pengalaman">
+      <div class="" id="pengalaman">
         <div>
           <div class="h4 text-center mb-4 title text-uppercase">Pengalaman Kerja</div>
           <div class="container timeline">
@@ -309,8 +332,9 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </div>
         </div>
       </div>
+      <hr>
       <!-- Pilih yang SETIA -->
-      <div class="section">
+      <div class="">
         <div class="h4 text-center mb-4 title">Pilih Pemimpin Yang</div>
         <div class="row justify-content-center">
           <div class="flip-card">
@@ -365,8 +389,9 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </div>
         </div>
       </div>
+      <hr>
       <!-- Penugasan Partai -->
-      <div class="carousel-inner section" id="tugas">
+      <div class="carousel-inner " id="tugas">
         <div class="h4 text-center mb-4 title text-uppercase">Penugasan Partai</div>
         <div class="row justify-content-center row-partai">
           <div class="card partai item">
@@ -427,8 +452,9 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </div>
         </div>
       </div>
+      <hr>
       <!-- Dukungan -->
-      <div class="section" id="dukungan">
+      <div class="" id="dukungan">
         <div>
           <div class="row justify-content-center" style="gap: 10rem">
             <div>
@@ -438,7 +464,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
                 </a>
               </div>
               <div class="text-center">
-                <div class="h4 dukungan m-0 text-center title value" akhi="55372">0</div>
+                <div class="h4 dukungan m-0 text-center title"><?php echo $totalDukungan; ?></div>
                 <p>Dukungan</p>
               </div>
             </div>
@@ -478,15 +504,15 @@ $koneksi = mysqli_connect("localhost", "root", "", "anangsetia", 3307);
           </div>
           <hr>
 
-          <div class="section" id="komentar">
-            <div class="h4 mb-4 text-center title">Dukungan</div>
+          <div class="" id="komentar">
+            <div class="h4 mb-4 text-center title">Review Dukungan</div>
             <div class="text-center">
               <img src="/images/profile.png" alt="">
             </div>
             <div class="row justify-content-center">
               <div class="scrollable-container mt-3" style="max-height: 300px; overflow-y: auto;">
                 <?php
-            $data_dukungan = mysqli_query($koneksi, "SELECT * FROM dukungan ORDER BY id ASC");
+            $data_dukungan = mysqli_query($koneksi, "SELECT * FROM dukungan ORDER BY id desC");
             while ($tampil_dukungan = mysqli_fetch_array($data_dukungan)) {
             ?>
                 <div class="rounded p-2 text-center m-2 card-komen">

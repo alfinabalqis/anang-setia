@@ -7628,7 +7628,7 @@ iframe {
 }
 
 .container.timeline {
-  min-height: 50vh;
+  /*min-height: 50vh;*/
   width: 100%;
   display: flex;
   align-items: center;
@@ -7830,7 +7830,7 @@ h1.flip {
   .card {
     display: inline-block;
     vertical-align: top;
-    width: 300px;
+    width: 350px;
     margin-right: 10px;
   }
 
@@ -7842,8 +7842,9 @@ h1.flip {
 
   .timeline-mobile {
     display: -webkit-inline-box;
+    vertical-align: top;
     overflow-x: scroll;
-    width: 300px;
+    width: 350px;
   }
   
   .timeline-mobile li {
