@@ -1,7 +1,7 @@
-body {
+html {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .bootstrap-switch {
@@ -7819,9 +7819,17 @@ h1.flip {
   color: #fff;
 }
 
+.carousel-item {
+  display: block;
+  width: 25%;
+}
+
+
 @media (max-width: 768px) {
   /*Start Slider*/
-  .cc-education{
+  .cc-education,
+  .row-partai{
+    display: block;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -7834,7 +7842,8 @@ h1.flip {
     margin-right: 10px;
   }
 
-  .card-body.edu{
+  .card-body.edu,
+  .card-body.partai{
     overflow-y: auto;
     white-space: normal;
     text-align: center;
@@ -7852,6 +7861,15 @@ h1.flip {
     text-align: center;
   }
 
+  .card.partai {
+    flex: 0 0 auto; 
+    margin-right: 10px;
+    height: 420px;
+  }
+
+  .card-body.partai {
+    padding: 15px;
+  }
   /*End Slider*/
 
   .cc-education .cc-education-header {

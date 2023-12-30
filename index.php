@@ -41,14 +41,10 @@ if (isset($_POST['simpan'])) {
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="shortcut icon" href="images/profile.png" type="image/x-icon">
-
-
-
-
   <link href="css/aos.css?ver=1.1.0" rel="stylesheet" />
   <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css">
-  <link href="css/main.css?ver=1.1.0" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
   <noscript>
     <style type="text/css">
       [data-aos] {
@@ -170,14 +166,14 @@ if (isset($_POST['simpan'])) {
       <hr>
 
       <!-- Countdown -->
-      <div class=" text-center d-flex flex-column justify-content-center">
+      <div class=" text-center d-flex flex-column justify-content-center mb-4">
         <div class="h4 text-center mb-4 title">Ikut Ramaikan Pesta Demokrasi <br> 14 Februari 2024</div>
         <div id="flipdown" class="flipdown"></div>
       </div>
       <hr>
 
       <!-- Youtube -->
-      <div class="" id="profile">
+      <div class="mb-5" id="profile">
         <div class="container">
           <div class="h4 text-center mb-4 title text-uppercase">Indonesia Unggul</div>
           <center>
@@ -191,7 +187,7 @@ if (isset($_POST['simpan'])) {
       <hr>
 
       <!-- Visi Misi -->
-      <div class="" id="visi">
+      <div class="mb-5" id="visi">
         <div class="container">
           <div class="h4 text-center mb-4 title text-uppercase">Visi & Misi</div>
           <div class="row justify-content-around mt-3">
@@ -232,7 +228,7 @@ if (isset($_POST['simpan'])) {
       </div>
       <hr>
       <!-- Pendidikan -->
-      <div class="" id="pendidikan">
+      <div class="mb-5" id="pendidikan">
         <div class="h4 text-center mb-4 title text-uppercase">Pendidikan</div>
         <div class="container cc-education">
           <div class="card">
@@ -295,7 +291,7 @@ if (isset($_POST['simpan'])) {
       </div>
       <hr>
       <!-- Pengalaman Kerja -->
-      <div class="" id="pengalaman">
+      <div class="mb-5" id="pengalaman">
         <div>
           <div class="h4 text-center mb-4 title text-uppercase">Pengalaman Kerja</div>
           <div class="container timeline">
@@ -334,7 +330,7 @@ if (isset($_POST['simpan'])) {
       </div>
       <hr>
       <!-- Pilih yang SETIA -->
-      <div class="">
+      <div class="mb-5">
         <div class="h4 text-center mb-4 title">Pilih Pemimpin Yang</div>
         <div class="row justify-content-center">
           <div class="flip-card">
@@ -391,12 +387,12 @@ if (isset($_POST['simpan'])) {
       </div>
       <hr>
       <!-- Penugasan Partai -->
-      <div class="carousel-inner " id="tugas">
+      <div class="mb-5" id="tugas">
         <div class="h4 text-center mb-4 title text-uppercase">Penugasan Partai</div>
         <div class="row justify-content-center row-partai">
           <div class="card partai item">
             <img class="card-img-top" src="./images/partai/1.png" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body partai">
               <p class="card-text font-weight-bold text-center pt-2">Caleg DPR RI PDI Perjuangan No Urut 2 Dapil Jabar I
                 (Kota Bandung & Kota Cimahi)</p>
             </div>
@@ -410,42 +406,42 @@ if (isset($_POST['simpan'])) {
           </div>
           <div class="card partai item">
             <img class="card-img-top" src="./images/partai/3.png" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body partai">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator bidang Pengamanan Kegiatan Peringatan
                 Bulan Bung Karno di GBK 2023</p>
             </div>
           </div>
           <div class="card partai item">
             <img class="card-img-top" src="./images/partai/4.png" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body partai">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator Acara 50 tahun PDI Perjuangan di
                 Kemayoran 2023</p>
             </div>
           </div>
           <div class="card partai item">
             <img class="card-img-top" src="./images/partai/5.png" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body partai">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator Peduli Korban Gempa Cianjur BKNP PDI
                 Perjuangan 2022</p>
             </div>
           </div>
           <div class="card partai item">
             <img class="card-img-top" src="./images/partai/6.png" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body partai">
               <p class="card-text font-weight-bold text-center pt-2">Direktur Festival Desa II BKNP PDI Perjuangan 2022
               </p>
             </div>
           </div>
           <div class="card partai item">
             <img class="card-img-top" src="./images/partai/7.png" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body partai">
               <p class="card-text font-weight-bold text-center pt-2">Direktur Festival Desa I BKNP PDI Perjuangan 2021
               </p>
             </div>
           </div>
           <div class="card partai item">
             <img class="card-img-top" src="./images/partai/8.png" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body partai">
               <p class="card-text font-weight-bold text-center pt-2">Koordinator Peresmian Rumah Budaya PDI Perjuangan
                 2020</p>
             </div>
@@ -454,7 +450,7 @@ if (isset($_POST['simpan'])) {
       </div>
       <hr>
       <!-- Dukungan -->
-      <div class="" id="dukungan">
+      <div class="mb-5" id="dukungan">
         <div>
           <div class="row justify-content-center" style="gap: 10rem">
             <div>
