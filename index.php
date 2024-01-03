@@ -449,6 +449,73 @@ if (isset($_POST['simpan'])) {
         </div>
       </div>
       <hr>
+      <!-- Galeri -->
+      <section class="gallery-block grid-gallery">
+        <div class="container">
+          <div class="heading">
+            <h2>Galeri</h2>
+          </div>
+          <div class="row galeri">
+            <div class="row">
+              <div class="col-lg-4 item">
+                <a class="lightbox" href="https://www.instagram.com/p/C1WWEh0v7pP/" target="_blank">
+                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-1.png">
+                </a>
+              </div>
+              <div class="col-lg-4 item">
+                <a class="lightbox" href="https://www.instagram.com/p/C0o-DjnvYg2/" target="_blank">
+                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-2.png">
+                </a>
+              </div>
+              <div class="col-lg-4 item">
+                <a class="lightbox" href="https://www.instagram.com/p/C0y7lyPvu2J/" target="_blank">
+                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-3.png">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 item non-mobile">
+                <a class="lightbox" href="https://www.instagram.com/p/CzoSRviv4BQ/" target="_blank">
+                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-4.png">
+                </a>
+              </div>
+              <div class="col-lg-4 item non-mobile">
+                <a class="lightbox" href="https://www.instagram.com/p/CzKdhdFP5nh/" target="_blank">
+                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-5.png">
+                </a>
+              </div>
+              <div class="col-lg-4 item non-mobile">
+                <a class="lightbox" href="https://www.instagram.com/p/CytRlISPmub/" target="_blank">
+                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-6.png">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 item non-mobile">
+                <a class="lightbox" href="https://www.instagram.com/p/CysV_PTPDFe/" target="_blank">
+                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-7.png">
+                </a>
+              </div>
+              <div class="col-lg-4 item non-mobile">
+                <a class="lightbox" href="https://www.instagram.com/p/CyDml8Av5dZ/" target="_blank">
+                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-8.png">
+                </a>
+              </div>
+              <div class="col-lg-4 item non-mobile">
+                <a class="lightbox" href="https://www.instagram.com/p/CyBytG5yJTJ/" target="_blank">
+                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-9.png">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="https://www.instagram.com/anang_setia_sumarsono/" target="_blank">
+            <button class="btn btn-primary mt-2 mobile">SELENGKAPNYA</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <hr>
       <!-- Dukungan -->
       <div class="mb-5" id="dukungan">
         <div>
@@ -563,6 +630,10 @@ if (isset($_POST['simpan'])) {
       }
 
       animate();
+    });
+
+    baguetteBox.run('.grid-gallery', {
+      animation: 'slideIn'
     });
   </script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
