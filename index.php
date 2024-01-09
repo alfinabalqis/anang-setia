@@ -36,7 +36,7 @@ if (isset($_POST['simpan'])) {
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anang Setia Sumarsono</title>
+  <title>Agung Pratomo</title>
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
@@ -61,7 +61,7 @@ if (isset($_POST['simpan'])) {
       <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
         <div class="container">
           <div class="navbar-translate">
-            <a class="navbar-brand" href="#" rel="tooltip">Anang Setia</a>
+            <a class="navbar-brand" href="/" rel="tooltip">Agung Pratomo</a>
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
               aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
@@ -71,10 +71,10 @@ if (isset($_POST['simpan'])) {
           <nav class="collapse navbar-collapse justify-content-end" id="navigation">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link smooth-scroll" href="#pengalaman">Pengalaman</a>
+                <a class="nav-link smooth-scroll" href="#berita">Berita</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link smooth-scroll" href="#tugas">Penugasan</a>
+                <a class="nav-link smooth-scroll" href="#galeri">Galeri</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link smooth-scroll" href="#dukungan">Dukungan</a>
@@ -99,12 +99,12 @@ if (isset($_POST['simpan'])) {
                   <a href="#"><img src="images/profile.png" alt="Image" /></a>
                 </div>
                 <p class="category text-white text-uppercase mb-0">Dukung Pilihan Kita</p>
-                <div class="h2 title mt-0">Anang Setia Sumarsono, M.Si</div>
+                <div class="h2 title mt-0">AGUNG PRATOMO</div>
                 <p class="category text-white text-uppercase">
-                  Caleg DPR RI PDI Perjuangan <br />
-                  Dapil Jabar I (Kota Bandung & Cimahi)
+                  CALEG DPRD KOTA PANGKALPINANG  - DAPIL V KECAMATAN GABEK <br />
+                  (Kel. Gabek 1 , Gabek 2 , Selindung Baru, Selindung Lama, Air Salemba, Jerambah Gantung)
                 </p>
-                <p class="category text-white text-uppercase">"Pilih Yang SETIA"</p>
+                <p class="category text-white text-uppercase">"MULAI DARI MUDA"</p>
                 <a class="btn btn-primary smooth-scroll" href="#about" data-aos="zoom-in"
                   data-aos-anchor="data-aos-anchor">Selengkapnya</a>
               </div>
@@ -112,19 +112,19 @@ if (isset($_POST['simpan'])) {
             <div class="section">
               <div class="container">
                 <div class="button-container">
-                  <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/anang.setia.92"
-                    rel="tooltip" target="_blank" title="Follow me on Facebook">
-                    <i class="fa fa-facebook"></i>
-                  </a>
                   <a class="btn btn-default btn-round btn-lg btn-icon"
-                    href="https://www.instagram.com/anang_setia_sumarsono/" rel="tooltip" target="_blank"
-                    title="Follow me on Instagram">
+                    href="https://www.instagram.com/agungpratomo___/" rel="tooltip" target="_blank"
+                    title="Follow on Instagram">
                     <i class="fa fa-instagram"></i>
                   </a>
                   <a class="btn btn-default btn-round btn-lg btn-icon"
-                    href="https://www.tiktok.com/@pdip.anang.setia?_t=8iaSOztnnCK&_r=1" rel="tooltip" target="_blank"
-                    title="Follow me on Tiktok">
+                    href="https://www.tiktok.com/@agungpratomo___" rel="tooltip" target="_blank"
+                    title="Follow on Tiktok">
                     <i class="fa fa-brands fa-tiktok"></i>
+                  </a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.threads.net/@agungpratomo___"
+                    rel="tooltip" target="_blank" title="Follow on Threads">
+                    <i class="fa fa-brands fa-threads"></i>
                   </a>
                   <a class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Play and Pause Music"
                     onclick="toggleAudio()">
@@ -149,14 +149,14 @@ if (isset($_POST['simpan'])) {
               <div class="col-lg-6 col-md-12">
                 <div class="card-body tentang">
                   <p class="text-white">Kenali Calon Pilihan Kita</p>
-                  <div class="h4 mt-0 title text-white">Anang Setia Sumarsono, M.Si</div>
-                  <p class="text-white">Caleg DPR RI PDI Perjuangan <br />
-                    Dapil Jabar I (Kota Bandung & Cimahi)</p>
-                  <div class="h4 mt-0 title text-white">Gerak Cepat Indonesia Unggul</div>
+                  <div class="h4 mt-0 title text-white">Agung Pratomo</div>
+                  <p class="text-white">CALEG DPRD KOTA PANGKALPINANG  - DAPIL V KECAMATAN GABEK <br />
+                  (Kel. Gabek 1 , Gabek 2 , Selindung Baru, Selindung Lama, Air Salemba, Jerambah Gantung)</p>
+                  <div class="h4 mt-0 title text-white">Mulai Dari Muda</div>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12 text-center">
-                <img src="./images/profile-full.jpg" alt="Profile Anang" class="p-4"
+                <img src="./images/profile-full.png" alt="Profile Agung" class="p-4"
                   style="height: 400px; margin: 1rem 0;">
               </div>
             </div>
@@ -173,7 +173,7 @@ if (isset($_POST['simpan'])) {
       <hr>
 
       <!-- Youtube -->
-      <div class="mb-5" id="profile">
+      <!-- <div class="mb-5" id="profile">
         <div class="container">
           <div class="h4 text-center mb-4 title text-uppercase">Indonesia Unggul</div>
           <center>
@@ -184,10 +184,10 @@ if (isset($_POST['simpan'])) {
           </center>
         </div>
       </div>
-      <hr>
+      <hr> -->
 
       <!-- Visi Misi -->
-      <div class="mb-5" id="visi">
+      <!-- <div class="mb-5" id="visi">
         <div class="container">
           <div class="h4 text-center mb-4 title text-uppercase">Visi & Misi</div>
           <div class="row justify-content-around mt-3">
@@ -226,9 +226,10 @@ if (isset($_POST['simpan'])) {
           </div>
         </div>
       </div>
-      <hr>
+      <hr> -->
+
       <!-- Pendidikan -->
-      <div class="mb-5" id="pendidikan">
+      <!-- <div class="mb-5" id="pendidikan">
         <div class="h4 text-center mb-4 title text-uppercase">Pendidikan</div>
         <div class="container cc-education">
           <div class="card">
@@ -289,9 +290,9 @@ if (isset($_POST['simpan'])) {
           </div>
         </div>
       </div>
-      <hr>
+      <hr> -->
       <!-- Pengalaman Kerja -->
-      <div class="mb-5" id="pengalaman">
+      <!-- <div class="mb-5" id="pengalaman">
         <div>
           <div class="h4 text-center mb-4 title text-uppercase">Pengalaman Kerja</div>
           <div class="container timeline">
@@ -328,9 +329,9 @@ if (isset($_POST['simpan'])) {
           </div>
         </div>
       </div>
-      <hr>
+      <hr> -->
       <!-- Pilih yang SETIA -->
-      <div class="mb-5">
+      <!-- <div class="mb-5">
         <div class="h4 text-center mb-4 title">Pilih Pemimpin Yang</div>
         <div class="row justify-content-center">
           <div class="flip-card">
@@ -385,9 +386,9 @@ if (isset($_POST['simpan'])) {
           </div>
         </div>
       </div>
-      <hr>
+      <hr> -->
       <!-- Penugasan Partai -->
-      <div class="mb-5" id="tugas">
+      <!-- <div class="mb-5" id="tugas">
         <div class="h4 text-center mb-4 title text-uppercase">Penugasan Partai</div>
         <div class="row justify-content-center row-partai">
           <div class="card partai item">
@@ -448,9 +449,42 @@ if (isset($_POST['simpan'])) {
           </div>
         </div>
       </div>
+      <hr> -->
+
+      <!-- Berita -->
+      <div class="mb-5" id="berita">
+        <div class="h4 text-center mb-4 title text-uppercase">Berita</div>
+        <div class="row justify-content-center row-partai">
+          <a href="https://lensabangkabelitung.com/2023/05/diinisiasi-kader-muda-agung-pratomo-minggu-ini-pdip-hadirkan-cek-kesehatan-dan-pengobatan-gratis/" target="_blank">
+            <div class="card partai item">
+              <img class="card-img-top" src="./images/berita/1.png" alt="Card image cap">
+              <div class="card-body partai">
+                <p class="card-text font-weight-bold text-center pt-2">Diinisiasi Kader Muda Agung Pratomo, Minggu Ini PDIP Hadirkan Cek Kesehatan dan Pengobatan Gratis</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://bangka.tribunnews.com/2023/05/15/ratusan-warga-rasakan-manfaat-baksos-kesehatan-rudi-center-dan-kader-muda-pdip-bangka-belitung" target="_blank">
+            <div class="card partai item">
+              <img class="card-img-top" src="./images/berita/2.png" alt="Card image cap">
+              <div class="card-body partai">
+                <p class="card-text font-weight-bold text-center pt-2">Ratusan Warga Rasakan Manfaat Baksos Kesehatan Rudi Center dan Kader Muda PDIP Bangka Belitung</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.faktaberita.co.id/jadi-ajang-pererat-silaturahmi-turnamen-gaple-rudianto-cup-diapresiasi-warga/" target="_blank">
+            <div class="card partai item">
+              <img class="card-img-top" src="./images/berita/3.png" alt="Card image cap">
+              <div class="card-body partai">
+                <p class="card-text font-weight-bold text-center pt-2">Jadi Ajang Pererat Silaturahmi, Turnamen Gaple Rudianto Cup Diapresiasi Warga</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
       <hr>
+
       <!-- Galeri -->
-      <section class="gallery-block grid-gallery">
+      <section class="gallery-block grid-gallery" id="galeri">
         <div class="container">
           <div class="heading">
             <h2>Galeri</h2>
@@ -458,64 +492,48 @@ if (isset($_POST['simpan'])) {
           <div class="row galeri">
             <div class="row">
               <div class="col-lg-4 item">
-                <a class="lightbox" href="https://www.instagram.com/p/C1WWEh0v7pP/" target="_blank">
+                <a class="lightbox" href="#" target="_blank">
                   <img class="img-fluid image scale-on-hover" src="./images/galeri/img-1.png">
                 </a>
               </div>
               <div class="col-lg-4 item">
-                <a class="lightbox" href="https://www.instagram.com/p/C0o-DjnvYg2/" target="_blank">
+                <a class="lightbox" href="#" target="_blank">
                   <img class="img-fluid image scale-on-hover" src="./images/galeri/img-2.png">
                 </a>
               </div>
               <div class="col-lg-4 item">
-                <a class="lightbox" href="https://www.instagram.com/p/C0y7lyPvu2J/" target="_blank">
+                <a class="lightbox" href="#" target="_blank">
                   <img class="img-fluid image scale-on-hover" src="./images/galeri/img-3.png">
                 </a>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-4 item non-mobile">
-                <a class="lightbox" href="https://www.instagram.com/p/CzoSRviv4BQ/" target="_blank">
+                <a class="lightbox" href="#" target="_blank">
                   <img class="img-fluid image scale-on-hover" src="./images/galeri/img-4.png">
                 </a>
               </div>
               <div class="col-lg-4 item non-mobile">
-                <a class="lightbox" href="https://www.instagram.com/p/CzKdhdFP5nh/" target="_blank">
+                <a class="lightbox" href="#" target="_blank">
                   <img class="img-fluid image scale-on-hover" src="./images/galeri/img-5.png">
                 </a>
               </div>
               <div class="col-lg-4 item non-mobile">
-                <a class="lightbox" href="https://www.instagram.com/p/CytRlISPmub/" target="_blank">
+                <a class="lightbox" href="#" target="_blank">
                   <img class="img-fluid image scale-on-hover" src="./images/galeri/img-6.png">
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 item non-mobile">
-                <a class="lightbox" href="https://www.instagram.com/p/CysV_PTPDFe/" target="_blank">
-                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-7.png">
-                </a>
-              </div>
-              <div class="col-lg-4 item non-mobile">
-                <a class="lightbox" href="https://www.instagram.com/p/CyDml8Av5dZ/" target="_blank">
-                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-8.png">
-                </a>
-              </div>
-              <div class="col-lg-4 item non-mobile">
-                <a class="lightbox" href="https://www.instagram.com/p/CyBytG5yJTJ/" target="_blank">
-                  <img class="img-fluid image scale-on-hover" src="./images/galeri/img-9.png">
                 </a>
               </div>
             </div>
           </div>
           <div class="text-center">
-            <a href="https://www.instagram.com/anang_setia_sumarsono/" target="_blank">
+            <a href="https://www.instagram.com/agungpratomo___/" target="_blank">
             <button class="btn btn-primary mt-2 mobile">SELENGKAPNYA</button>
             </a>
           </div>
         </div>
       </section>
       <hr>
+
       <!-- Dukungan -->
       <div class="mb-5" id="dukungan">
         <div>
@@ -547,8 +565,9 @@ if (isset($_POST['simpan'])) {
         <hr>
         <div class="container cc-reference">
           <div class="h4 mb-4 text-center title">Dukungan</div>
-          <p class="text-center">Berikan Dukungan anda Kepada Anang Setia Sumarsono sebagai Calon DPR RI Tahun 2024 <br>
-            Dapil Jawa Barat I Kota Bandung dan Kota Cimahi melalui kolom komentar dibawah</p>
+          <p class="text-center">Berikan Dukungan anda Kepada Agung Pratomo sebagai <br> 
+            Caleg DPRD Kota Pangkal Pinang - Dapil 5 Kecamatan Gabek  <br>
+            (Kel. Gabek 1 , Gabek 2 , Selindung Baru, Selindung Lama, Air Salemba, Jerambah Gantung)</p>
           <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" style="margin: 0 auto;">
             <div class="my-2 p-3 pt-2">
               <form action="#" method="POST">
@@ -561,7 +580,7 @@ if (isset($_POST['simpan'])) {
                   <textarea class="form-control" style="resize: none;" id="pesan" name="pesan" rows="4"
                     required></textarea>
                 </div>
-                <button class="btn btn-primary mt-2" type="submit" name="simpan">KIRIMKAN DUKUNGAN</button>
+                <button class="btn btn-primary mt-2" type="submit" name="simpan">KIRIM DUKUNGAN</button>
               </form>
             </div>
           </div>
@@ -593,19 +612,24 @@ if (isset($_POST['simpan'])) {
     </div>
   </div>
   <hr>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="container text-center">
-      <a class="cc-facebook btn btn-link" href="https://www.facebook.com/anang.setia.92">
-        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-      </a>
-      <a class="cc-instagram btn btn-link" href="https://www.instagram.com/anang_setia_sumarsono/">
+      <a class="cc-instagram btn btn-link" href="https://www.instagram.com/agungpratomo___/" target="_blank">
         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
       </a>
+      <a class="cc-instagram btn btn-link" href="https://www.tiktok.com/@agungpratomo___" target="_blank">
+        <i class="fa fa-brands fa-tiktok fa-2x" aria-hidden="true"></i>
+      </a>
+      <a class="cc-instagram btn btn-link" href="https://www.threads.net/@agungpratomo___" target="_blank">
+        <i class="fa fa-brands fa-threads fa-2x" aria-hidden="true"></i>
+      </a>
     </div>
-    <div class="h4 title text-center">Anang Setia Sumarsono</div>
+    <div class="h4 title text-center">Agung Pratomo</div>
     <div class="text-center text-muted">
       <p>
-        &copy; 2023 All rights reserved.<br />
+        &copy; 2024 All rights Reserved by GD Tech Production.<br />
       </p>
     </div>
   </footer>
